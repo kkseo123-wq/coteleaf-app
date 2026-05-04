@@ -22,9 +22,9 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.1'
-          channel: 'stable'
+          channel: 'stable' # 특정 숫자 대신 'stable'을 적으면 가장 최신 버전인 3.22~3.24 이상을 사용합니다.
           cache: true
+
 
       - name: Get Flutter dependencies
         run: flutter pub get
